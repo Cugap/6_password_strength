@@ -8,7 +8,7 @@ def HaveForbidenSymbols(password):
     return False
 
 def HassUpperAndLowerCaseChars(password):
-    if ((password.isupper) and (password.islower)):
+    if ((not password.isupper()) and (not password.islower())):
         print ("Password has upper- and lower-case chars")
         return True
     return False
